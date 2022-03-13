@@ -36,7 +36,6 @@
       <itemPath>lib/src/timer.c</itemPath>
       <itemPath>lib/src/uart.c</itemPath>
       <itemPath>lib/inc/servocontrol.c</itemPath>
-      <itemPath>main.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -45,7 +44,8 @@
     </logicalFolder>
   </logicalFolder>
   <sourceRootList>
-    <Elem>.</Elem>
+    <Elem>lib/inc</Elem>
+    <Elem>lib/src</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
