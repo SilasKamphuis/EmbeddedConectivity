@@ -3,12 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-<<<<<<< HEAD
-            <file>file:/C:/Users/Silas%20Kamphuis/Documents/GitHub/EmbeddedConectivity/EMBC_A1.2_a.X/lib/inc/servocontrol.c</file>
-            <file>file:/C:/Users/Silas%20Kamphuis/Documents/GitHub/EmbeddedConectivity/EMBC_A1.2_a.X/lib/inc/servocontrol.h</file>
-=======
-            <file>file:/C:/Users/sammv/Documents/GitHub/EmbeddedConectivity/EMBC_A1.2_a.X/main.c</file>
->>>>>>> f3b57ad3d955e373848eaeb95b1e4495f418d5e8
+            <file>file:/C:/Users/Silas%20Kamphuis/Documents/GitHub/EmbeddedConectivity/EMBC_A1.2_a.X/main.c</file>
+            <file>file:/C:/Users/Silas%20Kamphuis/Documents/GitHub/EmbeddedConectivity/EMBC_A1.2_a.X/lib/src/button.c</file>
+            <file>file:/C:/Users/Silas%20Kamphuis/Documents/GitHub/EmbeddedConectivity/EMBC_A1.2_a.X/lib/inc/button.h</file>
+            <file>file:/C:/Users/Silas%20Kamphuis/Documents/GitHub/EmbeddedConectivity/EMBC_A1.2_a.X/nbproject/Makefile-default.mk</file>
+            <file>file:/C:/Users/Silas%20Kamphuis/Documents/GitHub/EmbeddedConectivity/EMBC_A1.2_a.X/nbproject/Makefile-impl.mk</file>
+            <file>file:/C:/Users/Silas%20Kamphuis/Documents/GitHub/EmbeddedConectivity/EMBC_A1.2_a.X/lib/src/servo.c</file>
+            <file>file:/C:/Users/Silas%20Kamphuis/Documents/GitHub/EmbeddedConectivity/EMBC_A1.2_a.X/lib/inc/timer.h</file>
+            <file>file:/C:/Users/Silas%20Kamphuis/Documents/GitHub/EmbeddedConectivity/EMBC_A1.2_a.X/lib/src/timer.c</file>
         </group>
     </open-files>
 </project-private>

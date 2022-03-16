@@ -8,20 +8,21 @@
 #include "oc.h"
 #include "pwm.h"
 #include "servo.h"
-//hoi alessa en silas
+
 int angle = 0; 
 int twoButtonsPressed = 0;
 unsigned char *message = 1;
 
 int main() 
 {
-  
+    LATA = 0;
+    TRISA = 0;
+          
   init_buttons();
-  init_servo(40000000, 5); 
+  init_servo(4000000, 5); 
   angle_setWidth(angle);
     
-  ansel_SRV_S0PWM = 0;
-  tris_SRV_S0PWM = 0;
+  tris_SRV_S1PWM = 0;
     
     while(1)
     {        
