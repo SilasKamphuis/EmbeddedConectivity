@@ -332,16 +332,16 @@ void savePeriod(int channel, int period) {
 
 void timer_register_T2callback(T2callback ptr_T2callback) 
 { 
-    T2callbackfp = ptr_T2callback; 
+    T2callbackfp = ptr_T2callback;
     T2callbackflag = 1; 
 }
 
-void __ISR(_TIMER_2_VECTOR, ipl7auto) T2InterruptHandler() 
-{         
-    if(T2callbackflag == 1) 
-    { 
-        T2callbackfp(); 
-    } 
-         
-    IFS0CLR = 0x100; 
-}
+//void __ISR(_TIMER_2_VECTOR, ipl7auto) T2InterruptHandler() 
+//{         
+//    if(T2callbackflag == 1) 
+//    { 
+//        T2callbackfp(); 
+//    } 
+//         
+//    IFS0CLR = 0x100; 
+//}

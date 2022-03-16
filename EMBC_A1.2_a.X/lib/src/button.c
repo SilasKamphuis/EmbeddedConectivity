@@ -21,7 +21,7 @@ void init_buttons()
     tris_BTN_BTNC = 1; //center button
 }
 
-char debounce (char button)
+int debounce (int button)
 {
     static int previousState = 0;
     if (_CP0_GET_COUNT() < 8000000) // check clock count

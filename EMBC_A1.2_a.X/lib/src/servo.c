@@ -7,7 +7,7 @@
 #include "pwm.h"
 #include "timer.h"
 
-timer_register_T2callback(servo_T2callback);
+//void timer_register_T2callback(T2callback servo_T2callback);
 
 void __ISR(_TIMER_2_VECTOR, ipl7auto) Timer2ISR() 
 {
@@ -41,10 +41,10 @@ void angle_setWidth(int angle)
     pwm_setWidth(3, 5, widthUs);
 }
 
-void servo_T2callback()
-{
-    // The timer interrupt should make the servo signal high
-    
-    // the output compare interrupt should make the servo signal low
-    
-};
+//void servo_T2callback()
+//{
+//    // The timer interrupt should make the servo signal high
+//    
+//    // the output compare interrupt should make the servo signal low
+//    
+//};
