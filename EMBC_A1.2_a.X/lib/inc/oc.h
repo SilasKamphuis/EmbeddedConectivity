@@ -70,6 +70,8 @@ void oc_stop(int channel);
  */
 int getTimerCode(int timerChannel);
 void setupOc(int channel, int timerChannel, int period);
+typedef void (*OC5callback) (void);
+void output_compare_OC5callback(OC5callback ptr_OC5callback);
 
 /**
  * OC __ISR examples

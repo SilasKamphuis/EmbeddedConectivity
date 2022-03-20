@@ -5,8 +5,10 @@
 #include <sys/attribs.h>
 #include "oc.h"
 
-#define ERROR -1
 
+#define ERROR -1
+OC5callback OC5callbackfp;
+unsigned char OC5callbackflag = 0;
 int clk1;
 
 int oc_init(int freq, int channel, int timerChannel, int period, int interruptEnabled, int interruptPriority) 
@@ -181,4 +183,19 @@ void setupOc(int channel, int timerChannel, int period)
 int getTimerCode(int timerChannel) 
 {
     return timerChannel == 2 ? 0 : 1;
+}
+
+void output_compare_OC5callback(OC5callback ptr_OC5callback) { 
+    OC5callbackfp = ptr_OC5callback; 
+    OC5callbackflag = 1; 
+} 
+
+void __ISR(_OUTPUT_COMPARE_5_VECTOR, ipl7auto) Oc5ISR() 
+{
+    if(OC5callbackflag == 1) { 
+        OC5callbackfp(); 
+    } 
+    
+    IFS0bits.OC5IF = 0;
+    
 }

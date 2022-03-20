@@ -36,3 +36,7 @@ extern "C" {
 #endif
 
 #endif	/* PRAGMA_H */
+
+char GetByte();
+
+char WriteByte();

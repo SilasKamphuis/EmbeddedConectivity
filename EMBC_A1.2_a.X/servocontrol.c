@@ -9,9 +9,20 @@
 #include "pwm.h"
 #include "servo.h"
 
+#define SPIFLASH_PROG_ADDR  0x100
+#define SPIFLASH_PROG_SIZE  1
+
 int angle = 0; 
 int twoButtonsPressed = 0;
 unsigned char *message = 1;
+unsigned char spiFlashPageR;
+unsigned char spiFlashPageW;
+
+
+
+
+char GetByte();
+char WriteByte();
 
 int main() 
 {
@@ -19,6 +30,7 @@ int main()
     TRISA = 0;
           
   init_buttons();
+  SPIFLASH_Init();
   init_servo(4000000, 5); 
   angle_setWidth(angle);
     
@@ -45,7 +57,11 @@ int main()
                 else
                 {
                     angle = angle + 5;
+                    spiFlashPageW = angle;
+//                    SPIFLASH_ProgramPage(SPIFLASH_PROG_ADDR,spiFlashPageW, 1);
                 }
+                SPIFLASH_Read(SPIFLASH_PROG_ADDR, spiFlashPageR, 1);
+//                angle = spiFlashPageR - '0';
                 angle_setWidth(angle);
             }
             twoButtonsPressed = 0; 
@@ -70,11 +86,25 @@ int main()
             else
             {
                 angle = angle - 5;
+                                    spiFlashPageW = angle;
+//                    SPIFLASH_ProgramPage(SPIFLASH_PROG_ADDR,spiFlashPageW, 1);
             }
+                               SPIFLASH_Read(SPIFLASH_PROG_ADDR, spiFlashPageR, 1);
+//                angle = spiFlashPageR - '0';
             angle_setWidth(angle);
             }
             twoButtonsPressed = 0; 
             
         }     
     }
+}
+
+char GetByte()
+{
+    SPIFLASH_Read(SPIFLASH_PROG_ADDR, spiFlashPageR, 1);
+}
+
+char WriteByte()
+{
+    SPIFLASH_ProgramPage(SPIFLASH_PROG_ADDR,spiFlashPageW, 1);
 }
