@@ -21,9 +21,6 @@ unsigned char spiFlashPageW;
 
 
 
-char GetByte();
-char WriteByte();
-
 int main() 
 {
     LATA = 0;
@@ -56,13 +53,22 @@ int main()
                 }
                 else
                 {
+                    //change angle
                     angle = angle + 5;
-                    spiFlashPageW = angle;
-//                    SPIFLASH_ProgramPage(SPIFLASH_PROG_ADDR,spiFlashPageW, 1);
+                    // int to char
+                    spiFlashPageW = angle + '0';
+                    //clear flash
+                    SPIFLASH_EraseAll();
+                    //write angle to flash
+                    SPIFLASH_ProgramPage(SPIFLASH_PROG_ADDR,spiFlashPageW, 1);
                 }
-                SPIFLASH_Read(SPIFLASH_PROG_ADDR, spiFlashPageR, 1);
+                    //set default for read
+                    spiFlashPageR = 0xff;
+                    //read flash
+                    SPIFLASH_Read(SPIFLASH_PROG_ADDR, spiFlashPageR, 1);
 //                angle = spiFlashPageR - '0';
-                angle_setWidth(angle);
+                    
+                    angle_setWidth(angle);
             }
             twoButtonsPressed = 0; 
         }
@@ -85,11 +91,19 @@ int main()
             }
             else
             {
+                //change angle
                 angle = angle - 5;
-                                    spiFlashPageW = angle;
-//                    SPIFLASH_ProgramPage(SPIFLASH_PROG_ADDR,spiFlashPageW, 1);
-            }
-                               SPIFLASH_Read(SPIFLASH_PROG_ADDR, spiFlashPageR, 1);
+                // int to char
+                spiFlashPageW = angle + '0';
+                //clear flash
+                SPIFLASH_EraseAll();
+                //write angle to flash
+                SPIFLASH_ProgramPage(SPIFLASH_PROG_ADDR,spiFlashPageW, 1);
+            }   
+                //set default for read
+                spiFlashPageR = 0xff;
+                //read flash
+                SPIFLASH_Read(SPIFLASH_PROG_ADDR, spiFlashPageR, 1);
 //                angle = spiFlashPageR - '0';
             angle_setWidth(angle);
             }
@@ -99,12 +113,3 @@ int main()
     }
 }
 
-char GetByte()
-{
-    SPIFLASH_Read(SPIFLASH_PROG_ADDR, spiFlashPageR, 1);
-}
-
-char WriteByte()
-{
-    SPIFLASH_ProgramPage(SPIFLASH_PROG_ADDR,spiFlashPageW, 1);
-}
