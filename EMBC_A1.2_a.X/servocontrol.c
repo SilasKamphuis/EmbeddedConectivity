@@ -9,14 +9,14 @@
 #include "pwm.h"
 #include "servo.h"
 
-#define SPIFLASH_PROG_ADDR  0x100
+#define SPIFLASH_PROG_ADDR  0xf000000
 #define SPIFLASH_PROG_SIZE  1
 
 int angle = 0; 
 int twoButtonsPressed = 0;
 unsigned char *message = 1;
-unsigned char spiFlashPageR;
-unsigned char spiFlashPageW;
+unsigned char spiFlashPageR[1];
+unsigned char spiFlashPageW[1];
 
 
 
@@ -28,10 +28,27 @@ int main()
           
   init_buttons();
   SPIFLASH_Init();
+  // is overbodig want word in elke function van spiflash aangeroepen
+  //als je deze ook aanroept in de main doe je het dubbel!
+  //SPIFLASH_WriteEnable();
   init_servo(4000000, 5); 
   angle_setWidth(angle);
     
   tris_SRV_S1PWM = 0;
+  
+  //Read the value from the spi memory
+  //Read the value
+    spiFlashPageR[0] = 0;
+    
+    
+    SPIFLASH_Read(SPIFLASH_PROG_ADDR, spiFlashPageR, 1);
+    
+  //Check if it is garbage and if it isnt then use it, otherwise use 0 deg.
+    int angle = (int)(spiFlashPageR[0]) - 90;
+    if (angle >= -45 && angle <= 45)
+        angle_setWidth(angle);
+    else
+        angle_setWidth(0);
     
     while(1)
     {        
@@ -56,18 +73,12 @@ int main()
                     //change angle
                     angle = angle + 5;
                     // int to char
-                    spiFlashPageW = angle + '0';
+                    spiFlashPageW[0] = angle + 90;
                     //clear flash
-                    SPIFLASH_EraseAll();
+                    SPIFLASH_Erase4k(SPIFLASH_PROG_ADDR);
                     //write angle to flash
                     SPIFLASH_ProgramPage(SPIFLASH_PROG_ADDR,spiFlashPageW, 1);
-                }
-                    //set default for read
-                    spiFlashPageR = 0xff;
-                    //read flash
-                    SPIFLASH_Read(SPIFLASH_PROG_ADDR, spiFlashPageR, 1);
-//                angle = spiFlashPageR - '0';
-                    
+                }                   
                     angle_setWidth(angle);
             }
             twoButtonsPressed = 0; 
@@ -94,17 +105,12 @@ int main()
                 //change angle
                 angle = angle - 5;
                 // int to char
-                spiFlashPageW = angle + '0';
+                spiFlashPageW[0] = angle + 90;
                 //clear flash
-                SPIFLASH_EraseAll();
+                SPIFLASH_Erase4k(SPIFLASH_PROG_ADDR);
                 //write angle to flash
                 SPIFLASH_ProgramPage(SPIFLASH_PROG_ADDR,spiFlashPageW, 1);
             }   
-                //set default for read
-                spiFlashPageR = 0xff;
-                //read flash
-                SPIFLASH_Read(SPIFLASH_PROG_ADDR, spiFlashPageR, 1);
-//                angle = spiFlashPageR - '0';
             angle_setWidth(angle);
             }
             twoButtonsPressed = 0; 
