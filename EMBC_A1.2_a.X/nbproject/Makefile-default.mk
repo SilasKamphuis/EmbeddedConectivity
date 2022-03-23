@@ -107,138 +107,138 @@ endif
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: compile
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
-${OBJECTDIR}/lib/src/button.o: lib/src/button.c  .generated_files/flags/default/80da339ee59ec52ad23892dc553a3cb75c925a92 .generated_files/flags/default/d36d8e9644fd003593b843844aa77ca19a168a8b
+${OBJECTDIR}/lib/src/button.o: lib/src/button.c  .generated_files/edc9557a3783643ed147cd70ba94f65687a048a1.flag .generated_files/16f2622abf5d8a03fc6ac4e3777700166a2841fe.flag
 	@${MKDIR} "${OBJECTDIR}/lib/src" 
 	@${RM} ${OBJECTDIR}/lib/src/button.o.d 
 	@${RM} ${OBJECTDIR}/lib/src/button.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"lib/src" -I"lib/inc" -fno-common -MP -MMD -MF "${OBJECTDIR}/lib/src/button.o.d" -o ${OBJECTDIR}/lib/src/button.o lib/src/button.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"lib/src" -I"lib/inc" -MP -MMD -MF "${OBJECTDIR}/lib/src/button.o.d" -o ${OBJECTDIR}/lib/src/button.o lib/src/button.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/lib/src/i2c.o: lib/src/i2c.c  .generated_files/flags/default/952762417464ae1ebdb4ff0c9254b26ec2c4b644 .generated_files/flags/default/d36d8e9644fd003593b843844aa77ca19a168a8b
+${OBJECTDIR}/lib/src/i2c.o: lib/src/i2c.c  .generated_files/1761cc4ae970f2fc873199013cf73445983793e8.flag .generated_files/16f2622abf5d8a03fc6ac4e3777700166a2841fe.flag
 	@${MKDIR} "${OBJECTDIR}/lib/src" 
 	@${RM} ${OBJECTDIR}/lib/src/i2c.o.d 
 	@${RM} ${OBJECTDIR}/lib/src/i2c.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"lib/src" -I"lib/inc" -fno-common -MP -MMD -MF "${OBJECTDIR}/lib/src/i2c.o.d" -o ${OBJECTDIR}/lib/src/i2c.o lib/src/i2c.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"lib/src" -I"lib/inc" -MP -MMD -MF "${OBJECTDIR}/lib/src/i2c.o.d" -o ${OBJECTDIR}/lib/src/i2c.o lib/src/i2c.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/lib/src/oc.o: lib/src/oc.c  .generated_files/flags/default/53d6d72994e7eab851259f0bed466fb8871425e3 .generated_files/flags/default/d36d8e9644fd003593b843844aa77ca19a168a8b
+${OBJECTDIR}/lib/src/oc.o: lib/src/oc.c  .generated_files/c21f5f89936387b0ff8150abbc338fb1b7d10632.flag .generated_files/16f2622abf5d8a03fc6ac4e3777700166a2841fe.flag
 	@${MKDIR} "${OBJECTDIR}/lib/src" 
 	@${RM} ${OBJECTDIR}/lib/src/oc.o.d 
 	@${RM} ${OBJECTDIR}/lib/src/oc.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"lib/src" -I"lib/inc" -fno-common -MP -MMD -MF "${OBJECTDIR}/lib/src/oc.o.d" -o ${OBJECTDIR}/lib/src/oc.o lib/src/oc.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"lib/src" -I"lib/inc" -MP -MMD -MF "${OBJECTDIR}/lib/src/oc.o.d" -o ${OBJECTDIR}/lib/src/oc.o lib/src/oc.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/lib/src/pwm.o: lib/src/pwm.c  .generated_files/flags/default/f45c553529c038edffbdaf7b9075aa2d9cb25838 .generated_files/flags/default/d36d8e9644fd003593b843844aa77ca19a168a8b
+${OBJECTDIR}/lib/src/pwm.o: lib/src/pwm.c  .generated_files/433e949963ba28adc517bf88b60ba1004cae15d2.flag .generated_files/16f2622abf5d8a03fc6ac4e3777700166a2841fe.flag
 	@${MKDIR} "${OBJECTDIR}/lib/src" 
 	@${RM} ${OBJECTDIR}/lib/src/pwm.o.d 
 	@${RM} ${OBJECTDIR}/lib/src/pwm.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"lib/src" -I"lib/inc" -fno-common -MP -MMD -MF "${OBJECTDIR}/lib/src/pwm.o.d" -o ${OBJECTDIR}/lib/src/pwm.o lib/src/pwm.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"lib/src" -I"lib/inc" -MP -MMD -MF "${OBJECTDIR}/lib/src/pwm.o.d" -o ${OBJECTDIR}/lib/src/pwm.o lib/src/pwm.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/lib/src/servo.o: lib/src/servo.c  .generated_files/flags/default/379e7336cd976679cf13754c854664795a6bb7fe .generated_files/flags/default/d36d8e9644fd003593b843844aa77ca19a168a8b
+${OBJECTDIR}/lib/src/servo.o: lib/src/servo.c  .generated_files/ede3b070723cf959cf1efe26308c5ae8b98733b.flag .generated_files/16f2622abf5d8a03fc6ac4e3777700166a2841fe.flag
 	@${MKDIR} "${OBJECTDIR}/lib/src" 
 	@${RM} ${OBJECTDIR}/lib/src/servo.o.d 
 	@${RM} ${OBJECTDIR}/lib/src/servo.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"lib/src" -I"lib/inc" -fno-common -MP -MMD -MF "${OBJECTDIR}/lib/src/servo.o.d" -o ${OBJECTDIR}/lib/src/servo.o lib/src/servo.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"lib/src" -I"lib/inc" -MP -MMD -MF "${OBJECTDIR}/lib/src/servo.o.d" -o ${OBJECTDIR}/lib/src/servo.o lib/src/servo.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/lib/src/spiflash.o: lib/src/spiflash.c  .generated_files/flags/default/ca9f7e5a6b16d8902e203528f7b763d813e1a453 .generated_files/flags/default/d36d8e9644fd003593b843844aa77ca19a168a8b
+${OBJECTDIR}/lib/src/spiflash.o: lib/src/spiflash.c  .generated_files/f4f5335755fef37075b113431aff65dc3b26c089.flag .generated_files/16f2622abf5d8a03fc6ac4e3777700166a2841fe.flag
 	@${MKDIR} "${OBJECTDIR}/lib/src" 
 	@${RM} ${OBJECTDIR}/lib/src/spiflash.o.d 
 	@${RM} ${OBJECTDIR}/lib/src/spiflash.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"lib/src" -I"lib/inc" -fno-common -MP -MMD -MF "${OBJECTDIR}/lib/src/spiflash.o.d" -o ${OBJECTDIR}/lib/src/spiflash.o lib/src/spiflash.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"lib/src" -I"lib/inc" -MP -MMD -MF "${OBJECTDIR}/lib/src/spiflash.o.d" -o ${OBJECTDIR}/lib/src/spiflash.o lib/src/spiflash.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/lib/src/srf.o: lib/src/srf.c  .generated_files/flags/default/ac2cdc7a732c03032f59a2d2f9edddf2996cd004 .generated_files/flags/default/d36d8e9644fd003593b843844aa77ca19a168a8b
+${OBJECTDIR}/lib/src/srf.o: lib/src/srf.c  .generated_files/19df135349c2b5c4e8031e34334840935012c115.flag .generated_files/16f2622abf5d8a03fc6ac4e3777700166a2841fe.flag
 	@${MKDIR} "${OBJECTDIR}/lib/src" 
 	@${RM} ${OBJECTDIR}/lib/src/srf.o.d 
 	@${RM} ${OBJECTDIR}/lib/src/srf.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"lib/src" -I"lib/inc" -fno-common -MP -MMD -MF "${OBJECTDIR}/lib/src/srf.o.d" -o ${OBJECTDIR}/lib/src/srf.o lib/src/srf.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"lib/src" -I"lib/inc" -MP -MMD -MF "${OBJECTDIR}/lib/src/srf.o.d" -o ${OBJECTDIR}/lib/src/srf.o lib/src/srf.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/lib/src/timer.o: lib/src/timer.c  .generated_files/flags/default/37bc8880beb2fdb7880122ca3a7287d11b38b95a .generated_files/flags/default/d36d8e9644fd003593b843844aa77ca19a168a8b
+${OBJECTDIR}/lib/src/timer.o: lib/src/timer.c  .generated_files/1d6b922dfa8fb14beaf8a3a8f87c34ab81c3fdb.flag .generated_files/16f2622abf5d8a03fc6ac4e3777700166a2841fe.flag
 	@${MKDIR} "${OBJECTDIR}/lib/src" 
 	@${RM} ${OBJECTDIR}/lib/src/timer.o.d 
 	@${RM} ${OBJECTDIR}/lib/src/timer.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"lib/src" -I"lib/inc" -fno-common -MP -MMD -MF "${OBJECTDIR}/lib/src/timer.o.d" -o ${OBJECTDIR}/lib/src/timer.o lib/src/timer.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"lib/src" -I"lib/inc" -MP -MMD -MF "${OBJECTDIR}/lib/src/timer.o.d" -o ${OBJECTDIR}/lib/src/timer.o lib/src/timer.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/lib/src/uart.o: lib/src/uart.c  .generated_files/flags/default/4a4b22664b3ab73816951d838699e91f7104e5ac .generated_files/flags/default/d36d8e9644fd003593b843844aa77ca19a168a8b
+${OBJECTDIR}/lib/src/uart.o: lib/src/uart.c  .generated_files/7c2920d6c378d82f6953f2f6e50ad4cda7ee0252.flag .generated_files/16f2622abf5d8a03fc6ac4e3777700166a2841fe.flag
 	@${MKDIR} "${OBJECTDIR}/lib/src" 
 	@${RM} ${OBJECTDIR}/lib/src/uart.o.d 
 	@${RM} ${OBJECTDIR}/lib/src/uart.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"lib/src" -I"lib/inc" -fno-common -MP -MMD -MF "${OBJECTDIR}/lib/src/uart.o.d" -o ${OBJECTDIR}/lib/src/uart.o lib/src/uart.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"lib/src" -I"lib/inc" -MP -MMD -MF "${OBJECTDIR}/lib/src/uart.o.d" -o ${OBJECTDIR}/lib/src/uart.o lib/src/uart.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/lib/inc/servocontrol.o: lib/inc/servocontrol.c  .generated_files/flags/default/8bbc3beaf2baf78309233251158ad22a0325c7f9 .generated_files/flags/default/d36d8e9644fd003593b843844aa77ca19a168a8b
+${OBJECTDIR}/lib/inc/servocontrol.o: lib/inc/servocontrol.c  .generated_files/3d7a4cf446ddb48b7c41f480b1434211b72b3a3e.flag .generated_files/16f2622abf5d8a03fc6ac4e3777700166a2841fe.flag
 	@${MKDIR} "${OBJECTDIR}/lib/inc" 
 	@${RM} ${OBJECTDIR}/lib/inc/servocontrol.o.d 
 	@${RM} ${OBJECTDIR}/lib/inc/servocontrol.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"lib/src" -I"lib/inc" -fno-common -MP -MMD -MF "${OBJECTDIR}/lib/inc/servocontrol.o.d" -o ${OBJECTDIR}/lib/inc/servocontrol.o lib/inc/servocontrol.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"lib/src" -I"lib/inc" -MP -MMD -MF "${OBJECTDIR}/lib/inc/servocontrol.o.d" -o ${OBJECTDIR}/lib/inc/servocontrol.o lib/inc/servocontrol.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/servocontrol.o: servocontrol.c  .generated_files/flags/default/d4acbf7b551832c2c218fedb210d2ce996ec965 .generated_files/flags/default/d36d8e9644fd003593b843844aa77ca19a168a8b
+${OBJECTDIR}/servocontrol.o: servocontrol.c  .generated_files/939c9a75083910ab4cbb468a3f9afed3c75c453e.flag .generated_files/16f2622abf5d8a03fc6ac4e3777700166a2841fe.flag
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/servocontrol.o.d 
 	@${RM} ${OBJECTDIR}/servocontrol.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"lib/src" -I"lib/inc" -fno-common -MP -MMD -MF "${OBJECTDIR}/servocontrol.o.d" -o ${OBJECTDIR}/servocontrol.o servocontrol.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"lib/src" -I"lib/inc" -MP -MMD -MF "${OBJECTDIR}/servocontrol.o.d" -o ${OBJECTDIR}/servocontrol.o servocontrol.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
 	
 else
-${OBJECTDIR}/lib/src/button.o: lib/src/button.c  .generated_files/flags/default/9a199c41e55581565d13558d30161c39df39be51 .generated_files/flags/default/d36d8e9644fd003593b843844aa77ca19a168a8b
+${OBJECTDIR}/lib/src/button.o: lib/src/button.c  .generated_files/f86de99eea4a865be28cceecd351712b78c9a3c4.flag .generated_files/16f2622abf5d8a03fc6ac4e3777700166a2841fe.flag
 	@${MKDIR} "${OBJECTDIR}/lib/src" 
 	@${RM} ${OBJECTDIR}/lib/src/button.o.d 
 	@${RM} ${OBJECTDIR}/lib/src/button.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"lib/src" -I"lib/inc" -fno-common -MP -MMD -MF "${OBJECTDIR}/lib/src/button.o.d" -o ${OBJECTDIR}/lib/src/button.o lib/src/button.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"lib/src" -I"lib/inc" -MP -MMD -MF "${OBJECTDIR}/lib/src/button.o.d" -o ${OBJECTDIR}/lib/src/button.o lib/src/button.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/lib/src/i2c.o: lib/src/i2c.c  .generated_files/flags/default/e4e68851a94362a34351941556b388572b1b0ab8 .generated_files/flags/default/d36d8e9644fd003593b843844aa77ca19a168a8b
+${OBJECTDIR}/lib/src/i2c.o: lib/src/i2c.c  .generated_files/7a2bb9e8bc6919658c919e60b7000d65de0d1c05.flag .generated_files/16f2622abf5d8a03fc6ac4e3777700166a2841fe.flag
 	@${MKDIR} "${OBJECTDIR}/lib/src" 
 	@${RM} ${OBJECTDIR}/lib/src/i2c.o.d 
 	@${RM} ${OBJECTDIR}/lib/src/i2c.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"lib/src" -I"lib/inc" -fno-common -MP -MMD -MF "${OBJECTDIR}/lib/src/i2c.o.d" -o ${OBJECTDIR}/lib/src/i2c.o lib/src/i2c.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"lib/src" -I"lib/inc" -MP -MMD -MF "${OBJECTDIR}/lib/src/i2c.o.d" -o ${OBJECTDIR}/lib/src/i2c.o lib/src/i2c.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/lib/src/oc.o: lib/src/oc.c  .generated_files/flags/default/8ce9f538f1edeaae2b0b30611fd06bf4a84451c2 .generated_files/flags/default/d36d8e9644fd003593b843844aa77ca19a168a8b
+${OBJECTDIR}/lib/src/oc.o: lib/src/oc.c  .generated_files/876db7e58fa7e71c1539bde840597137116a27d7.flag .generated_files/16f2622abf5d8a03fc6ac4e3777700166a2841fe.flag
 	@${MKDIR} "${OBJECTDIR}/lib/src" 
 	@${RM} ${OBJECTDIR}/lib/src/oc.o.d 
 	@${RM} ${OBJECTDIR}/lib/src/oc.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"lib/src" -I"lib/inc" -fno-common -MP -MMD -MF "${OBJECTDIR}/lib/src/oc.o.d" -o ${OBJECTDIR}/lib/src/oc.o lib/src/oc.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"lib/src" -I"lib/inc" -MP -MMD -MF "${OBJECTDIR}/lib/src/oc.o.d" -o ${OBJECTDIR}/lib/src/oc.o lib/src/oc.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/lib/src/pwm.o: lib/src/pwm.c  .generated_files/flags/default/7a8697a6ef47910995907600ddf592c77d780b27 .generated_files/flags/default/d36d8e9644fd003593b843844aa77ca19a168a8b
+${OBJECTDIR}/lib/src/pwm.o: lib/src/pwm.c  .generated_files/86b694b8ce49dc435ff99ad30e449b8b97cdb471.flag .generated_files/16f2622abf5d8a03fc6ac4e3777700166a2841fe.flag
 	@${MKDIR} "${OBJECTDIR}/lib/src" 
 	@${RM} ${OBJECTDIR}/lib/src/pwm.o.d 
 	@${RM} ${OBJECTDIR}/lib/src/pwm.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"lib/src" -I"lib/inc" -fno-common -MP -MMD -MF "${OBJECTDIR}/lib/src/pwm.o.d" -o ${OBJECTDIR}/lib/src/pwm.o lib/src/pwm.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"lib/src" -I"lib/inc" -MP -MMD -MF "${OBJECTDIR}/lib/src/pwm.o.d" -o ${OBJECTDIR}/lib/src/pwm.o lib/src/pwm.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/lib/src/servo.o: lib/src/servo.c  .generated_files/flags/default/dddf08bc5a8c8ebd7164004282ad99ab3acc2938 .generated_files/flags/default/d36d8e9644fd003593b843844aa77ca19a168a8b
+${OBJECTDIR}/lib/src/servo.o: lib/src/servo.c  .generated_files/764ba35a0ccf2f75a14aa4d793d1f15fd41fd938.flag .generated_files/16f2622abf5d8a03fc6ac4e3777700166a2841fe.flag
 	@${MKDIR} "${OBJECTDIR}/lib/src" 
 	@${RM} ${OBJECTDIR}/lib/src/servo.o.d 
 	@${RM} ${OBJECTDIR}/lib/src/servo.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"lib/src" -I"lib/inc" -fno-common -MP -MMD -MF "${OBJECTDIR}/lib/src/servo.o.d" -o ${OBJECTDIR}/lib/src/servo.o lib/src/servo.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"lib/src" -I"lib/inc" -MP -MMD -MF "${OBJECTDIR}/lib/src/servo.o.d" -o ${OBJECTDIR}/lib/src/servo.o lib/src/servo.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/lib/src/spiflash.o: lib/src/spiflash.c  .generated_files/flags/default/8e8f9481b757d962b1a5d1cfeb18699921c510ec .generated_files/flags/default/d36d8e9644fd003593b843844aa77ca19a168a8b
+${OBJECTDIR}/lib/src/spiflash.o: lib/src/spiflash.c  .generated_files/6db5308eb15bfa75fa3be7953b5f37a1d492cac5.flag .generated_files/16f2622abf5d8a03fc6ac4e3777700166a2841fe.flag
 	@${MKDIR} "${OBJECTDIR}/lib/src" 
 	@${RM} ${OBJECTDIR}/lib/src/spiflash.o.d 
 	@${RM} ${OBJECTDIR}/lib/src/spiflash.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"lib/src" -I"lib/inc" -fno-common -MP -MMD -MF "${OBJECTDIR}/lib/src/spiflash.o.d" -o ${OBJECTDIR}/lib/src/spiflash.o lib/src/spiflash.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"lib/src" -I"lib/inc" -MP -MMD -MF "${OBJECTDIR}/lib/src/spiflash.o.d" -o ${OBJECTDIR}/lib/src/spiflash.o lib/src/spiflash.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/lib/src/srf.o: lib/src/srf.c  .generated_files/flags/default/7bc0cf874537862c367b75d13d05b3a728787c65 .generated_files/flags/default/d36d8e9644fd003593b843844aa77ca19a168a8b
+${OBJECTDIR}/lib/src/srf.o: lib/src/srf.c  .generated_files/af80d4aabe83adc48b0b0ca8def44715e51d93fb.flag .generated_files/16f2622abf5d8a03fc6ac4e3777700166a2841fe.flag
 	@${MKDIR} "${OBJECTDIR}/lib/src" 
 	@${RM} ${OBJECTDIR}/lib/src/srf.o.d 
 	@${RM} ${OBJECTDIR}/lib/src/srf.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"lib/src" -I"lib/inc" -fno-common -MP -MMD -MF "${OBJECTDIR}/lib/src/srf.o.d" -o ${OBJECTDIR}/lib/src/srf.o lib/src/srf.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"lib/src" -I"lib/inc" -MP -MMD -MF "${OBJECTDIR}/lib/src/srf.o.d" -o ${OBJECTDIR}/lib/src/srf.o lib/src/srf.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/lib/src/timer.o: lib/src/timer.c  .generated_files/flags/default/e956858b8349c099b6c13da3af50ab9fc390ab94 .generated_files/flags/default/d36d8e9644fd003593b843844aa77ca19a168a8b
+${OBJECTDIR}/lib/src/timer.o: lib/src/timer.c  .generated_files/ed6aed43761e2cb2d1e00bc6e047f4dc57e87935.flag .generated_files/16f2622abf5d8a03fc6ac4e3777700166a2841fe.flag
 	@${MKDIR} "${OBJECTDIR}/lib/src" 
 	@${RM} ${OBJECTDIR}/lib/src/timer.o.d 
 	@${RM} ${OBJECTDIR}/lib/src/timer.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"lib/src" -I"lib/inc" -fno-common -MP -MMD -MF "${OBJECTDIR}/lib/src/timer.o.d" -o ${OBJECTDIR}/lib/src/timer.o lib/src/timer.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"lib/src" -I"lib/inc" -MP -MMD -MF "${OBJECTDIR}/lib/src/timer.o.d" -o ${OBJECTDIR}/lib/src/timer.o lib/src/timer.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/lib/src/uart.o: lib/src/uart.c  .generated_files/flags/default/73ae6edc7cad9fa37258f8adc4fe04aab70cb115 .generated_files/flags/default/d36d8e9644fd003593b843844aa77ca19a168a8b
+${OBJECTDIR}/lib/src/uart.o: lib/src/uart.c  .generated_files/bdfee513e373f4baf04130043ba9c8e6b4fb7848.flag .generated_files/16f2622abf5d8a03fc6ac4e3777700166a2841fe.flag
 	@${MKDIR} "${OBJECTDIR}/lib/src" 
 	@${RM} ${OBJECTDIR}/lib/src/uart.o.d 
 	@${RM} ${OBJECTDIR}/lib/src/uart.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"lib/src" -I"lib/inc" -fno-common -MP -MMD -MF "${OBJECTDIR}/lib/src/uart.o.d" -o ${OBJECTDIR}/lib/src/uart.o lib/src/uart.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"lib/src" -I"lib/inc" -MP -MMD -MF "${OBJECTDIR}/lib/src/uart.o.d" -o ${OBJECTDIR}/lib/src/uart.o lib/src/uart.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/lib/inc/servocontrol.o: lib/inc/servocontrol.c  .generated_files/flags/default/6db85527d58ed4d1bde543a62b2d85759f5cd17b .generated_files/flags/default/d36d8e9644fd003593b843844aa77ca19a168a8b
+${OBJECTDIR}/lib/inc/servocontrol.o: lib/inc/servocontrol.c  .generated_files/1b31cd4d37e2f5fc08e132a543da9c9ee2b14026.flag .generated_files/16f2622abf5d8a03fc6ac4e3777700166a2841fe.flag
 	@${MKDIR} "${OBJECTDIR}/lib/inc" 
 	@${RM} ${OBJECTDIR}/lib/inc/servocontrol.o.d 
 	@${RM} ${OBJECTDIR}/lib/inc/servocontrol.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"lib/src" -I"lib/inc" -fno-common -MP -MMD -MF "${OBJECTDIR}/lib/inc/servocontrol.o.d" -o ${OBJECTDIR}/lib/inc/servocontrol.o lib/inc/servocontrol.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"lib/src" -I"lib/inc" -MP -MMD -MF "${OBJECTDIR}/lib/inc/servocontrol.o.d" -o ${OBJECTDIR}/lib/inc/servocontrol.o lib/inc/servocontrol.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
 	
-${OBJECTDIR}/servocontrol.o: servocontrol.c  .generated_files/flags/default/d45f4ba38d2fda54d1b1f413aadb5b521a01b3d0 .generated_files/flags/default/d36d8e9644fd003593b843844aa77ca19a168a8b
+${OBJECTDIR}/servocontrol.o: servocontrol.c  .generated_files/198af0086df6648c2ad59564fbbb5ac6bf84ef21.flag .generated_files/16f2622abf5d8a03fc6ac4e3777700166a2841fe.flag
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/servocontrol.o.d 
 	@${RM} ${OBJECTDIR}/servocontrol.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"lib/src" -I"lib/inc" -fno-common -MP -MMD -MF "${OBJECTDIR}/servocontrol.o.d" -o ${OBJECTDIR}/servocontrol.o servocontrol.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"lib/src" -I"lib/inc" -MP -MMD -MF "${OBJECTDIR}/servocontrol.o.d" -o ${OBJECTDIR}/servocontrol.o servocontrol.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    
 	
 endif
 

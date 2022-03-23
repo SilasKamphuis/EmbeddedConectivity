@@ -41,7 +41,7 @@ int main()
     spiFlashPageR[0] = 0;
     
     
-    SPIFLASH_Read(SPIFLASH_PROG_ADDR, spiFlashPageR, 1);
+    SPIFLASH_Read(SPIFLASH_PROG_ADDR, spiFlashPageR, SPIFLASH_PROG_SIZE);
     
   //Check if it is garbage and if it isnt then use it, otherwise use 0 deg.
     int angle = (int)(spiFlashPageR[0]) - 90;
@@ -77,7 +77,7 @@ int main()
                     //clear flash
                     SPIFLASH_Erase4k(SPIFLASH_PROG_ADDR);
                     //write angle to flash
-                    SPIFLASH_ProgramPage(SPIFLASH_PROG_ADDR,spiFlashPageW, 1);
+                    SPIFLASH_ProgramPage(SPIFLASH_PROG_ADDR,spiFlashPageW, SPIFLASH_PROG_SIZE);
                 }                   
                     angle_setWidth(angle);
             }
@@ -109,7 +109,7 @@ int main()
                 //clear flash
                 SPIFLASH_Erase4k(SPIFLASH_PROG_ADDR);
                 //write angle to flash
-                SPIFLASH_ProgramPage(SPIFLASH_PROG_ADDR,spiFlashPageW, 1);
+                SPIFLASH_ProgramPage(SPIFLASH_PROG_ADDR,spiFlashPageW, SPIFLASH_PROG_SIZE);
             }   
             angle_setWidth(angle);
             }
