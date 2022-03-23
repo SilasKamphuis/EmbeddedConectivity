@@ -19,8 +19,6 @@ unsigned char spiFlashPageR[1];
 unsigned char spiFlashPageW[1];
 
 
-
-
 int main() 
 {
     LATA = 0;
