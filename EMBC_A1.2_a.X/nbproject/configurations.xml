@@ -36,6 +36,7 @@
       <itemPath>lib/src/timer.c</itemPath>
       <itemPath>lib/src/uart.c</itemPath>
       <itemPath>lib/inc/servocontrol.c</itemPath>
+      <itemPath>servocontrol.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -44,8 +45,7 @@
     </logicalFolder>
   </logicalFolder>
   <sourceRootList>
-    <Elem>lib/inc</Elem>
-    <Elem>lib/src</Elem>
+    <Elem>.</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
@@ -55,7 +55,7 @@
         <targetDevice>PIC32MX370F512L</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool>noID</platformTool>
+        <platformTool>PK3OBPlatformTool</platformTool>
         <languageToolchain>XC32</languageToolchain>
         <languageToolchainVersion>1.43</languageToolchainVersion>
         <platform>3</platform>
@@ -223,6 +223,9 @@
         <property key="save-temps" value="false"/>
         <property key="wpo-lto" value="false"/>
       </C32Global>
+      <PK3OBPlatformTool>
+        <property key="firmware.download.all" value="false"/>
+      </PK3OBPlatformTool>
     </conf>
   </confs>
 </configurationDescriptor>

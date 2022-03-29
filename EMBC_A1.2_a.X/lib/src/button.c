@@ -10,18 +10,18 @@ void init_buttons()
     tris_BTN_BTNR = 1; //right button
     ansel_BTN_BTNR = 0; // set pin to analog input
     
-    tris_BTN_BTNL = 1; //left button
-    ansel_BTN_BTNL = 0;// set pin to analog input
+    //tris_BTN_BTNL = 1; //left button
+    //ansel_BTN_BTNL = 0;// set pin to analog input
     
-    tris_BTN_BTNU = 1; //up button
-    ansel_BTN_BTNU = 0; // set pin to analog input
+    //tris_BTN_BTNU = 1; //up button
+    //ansel_BTN_BTNU = 0; // set pin to analog input
     
-    tris_BTN_BTND = 1; //down button 
+    //tris_BTN_BTND = 1; //down button 
     
     tris_BTN_BTNC = 1; //center button
 }
 
-char debounce (char button)
+int debounce (int button)
 {
     static int previousState = 0;
     if (_CP0_GET_COUNT() < 8000000) // check clock count
