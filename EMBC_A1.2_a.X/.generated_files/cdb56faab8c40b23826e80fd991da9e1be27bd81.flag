@@ -1,0 +1,1 @@
+ $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"lib/src" -I"lib/inc"   -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)    C:\Users\silas\OneDrive\Documents\GitHub\EmbeddedConectivity\EMBC_A1.2_a.X\lib\src\servo.c

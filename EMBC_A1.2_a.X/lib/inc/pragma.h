@@ -37,6 +37,6 @@ extern "C" {
 
 #endif	/* PRAGMA_H */
 
-char GetByte();
+int GetAngle();
 
-char WriteByte();
+int SetAngle(int NewAngle);

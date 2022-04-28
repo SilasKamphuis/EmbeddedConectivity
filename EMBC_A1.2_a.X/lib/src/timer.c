@@ -4,6 +4,7 @@
 #include <xc.h>
 #include <sys/attribs.h>
 #include "timer.h"
+//#include "pragma.h"
 
 #define ERROR -1
 
@@ -341,7 +342,10 @@ void __ISR(_TIMER_2_VECTOR, ipl7auto) T2InterruptHandler() {
         T2callbackfp(); 
     } 
          
-    //IFS0CLR = 0x100; 
+    
     IFS0bits.T2IF = 0;
 }  
+
+
+
 
