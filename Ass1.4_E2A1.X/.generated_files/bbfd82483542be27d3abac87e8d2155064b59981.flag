@@ -1,1 +1,0 @@
- $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION) -I"inc folder" -I"src folder"   -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  E:\OneDrive - Office 365 Fontys\Fontys Jaar 2 Semester 4\Documenten\EMBC\EMBC Practical\ASS 1.4\Ass1.4_Alec_Sjors_E2A1.X\src folder\i2c.c

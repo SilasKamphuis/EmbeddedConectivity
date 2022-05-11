@@ -1,6 +1,6 @@
 /* 
  * File:   testservo.c
- * Author: Sjors van Hees, Alec de Jongh
+ * Author: Silas, Kaylee, Alessa
  * Date:   5-4-2022
  * Version: 4
  */

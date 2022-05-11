@@ -3,7 +3,7 @@
     <type>com.microchip.mplab.nbide.embedded.makeproject</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
-            <name>Ass1.4_Alec_Sjors_E2A1</name>
+            <name>Ass1.4_E2A1</name>
             <creation-uuid>32a7ff19-c908-4244-ad34-2f9875664753</creation-uuid>
             <make-project-type>0</make-project-type>
             <c-extensions>c</c-extensions>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?> 
 <project>                                  
-  <executable name="dist/default/production/Ass1.4_Alec_Sjors_E2A1.X.production.elf">                 
+  <executable name="dist/default/production/Ass1.4_E2A1.X.production.elf">                 
     <memory name="program">                 
       <units>bytes</units>                 
       <length>531968</length>                 
-      <used>34908</used>                     
-      <free>497060</free>                     
+      <used>31064</used>                     
+      <free>500904</free>                     
     </memory>                              
     <memory name="data">              
       <units>bytes</units>                 
